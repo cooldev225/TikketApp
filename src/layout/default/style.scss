@@ -1,0 +1,16 @@
+.tikket-default-layout{
+  width: 100%;
+  max-width: 1440px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  @media (max-width: 1366px){
+    margin:0px 10vw;
+    width: unset;
+    transform: unset;
+  }
+  @media (max-width: 768px){
+    width: 100%;
+    max-width: 100%;
+    margin:0;
+  }
+}

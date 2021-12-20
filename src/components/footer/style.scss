@@ -1,0 +1,28 @@
+footer{
+    padding:100px 0px 50px 0px;
+    &>.container{
+        color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        &>.logo{
+            color: #040519;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #fff;
+            font-family: Horizon;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 72px;
+            display: flex;
+            align-items: center;
+            float: left;
+        }
+        &>.reserved{
+            line-height: 70px;
+            font-family: Poppins;
+            font-size: 22px;
+            font-weight: 300;
+        }
+    }
+}

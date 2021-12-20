@@ -1,0 +1,52 @@
+.worldie-button {
+  // height       : 40px;
+  border       : 1px solid var(--worldie-button-border-color);
+  border-radius: var(--worldie-button-border-radius);
+  position     : relative;
+  background   : transparent;
+  cursor       : pointer;
+  overflow     : hidden;
+  font-size: 14px;
+  height: 3em;
+
+  &::before {
+    content         : '';
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    bottom          : 0;
+    background-color: var(--worldie-button-color);
+  }
+
+  &>.content {
+    position       : relative;
+    display        : grid;
+    justify-content: center;
+    align-items    : center;
+    grid-auto-flow : column;
+    gap            : 5px;
+    padding        : 0 0.5em;
+    font-weight    : 600;
+    color          : var(--worldie-button-text-color);
+    line-height: 1.5;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0.85;
+    }
+    &::before {
+      content         : '';
+      position        : absolute;
+      top             : 0;
+      left            : 0;
+      right           : 0;
+      bottom          : 0;
+      background-color: var(--worldie-button-text-color);
+    }
+    >.content {
+      color          :var(--worldie-button-color);
+    }
+  }
+}

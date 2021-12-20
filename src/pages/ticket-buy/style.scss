@@ -1,0 +1,56 @@
+
+.main-content{
+    &>section.winmutant{
+        justify-content: space-between;
+        //align-items: center;
+        &>.left{
+            width: 55%;
+            &>.text{
+                .ago{
+                    margin-top:20px;
+                    span:nth-child(2){
+                        color: #392fb6;
+                    }
+                }
+                .caption{
+                    margin-top:0px;
+                }
+            }
+            &>.action.ticket{
+                justify-content: space-between;
+                &>.btn {
+                    display: flex;
+                    align-items: stretch;
+                    &>input[type="number"] {
+                        box-sizing: border-box;
+                        width: 100px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        font-size: 22px;
+                        border: none;
+                    }
+                    &>button {
+                        margin-left: 0;
+                    }
+                }
+                &>.price {
+                    &.bar{
+                        border: 1px solid #9B9BA3;
+                        height: 55px;
+                    }
+                    &>.price-value>.icon-wrapper {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    &>section.showoff.ticket{
+        .table-part{
+            .overlay{
+                display: none;
+            }
+        }
+    }
+}
+
